@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hastalık Tespiti</title>
+</head>
+<body>
+    <h1>Hastalık Tespiti Sonuçları</h1>
+    <ul>
+        {% for hastalik in hastaliklar %}
+            <li>{{ hastalik.ad }}</li>
+        {% endfor %}
+    </ul>
+    
+    
+</body>
+</html>
