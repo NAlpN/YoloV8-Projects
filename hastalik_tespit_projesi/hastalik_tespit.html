@@ -10,7 +10,12 @@
             <li>{{ hastalik.ad }}</li>
         {% endfor %}
     </ul>
-    
-    
+
+    <h2>Resim Yükle</h2>
+    <form method="post" enctype="multipart/form-data" action="{% url 'hastalik_tespit' %}">
+        {% csrf_token %}
+        <input type="file" name="resim" accept="image/*" required>
+        <button type="submit">Tespit Et</button>
+    </form>
 </body>
 </html>
